@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+    <input type="text" id="demo1">
+    <input type="text" id="demo2">
+    </form>
+    <br>
+    <button type="button" onclick="add()">Addition(+)</button>
+    <button type="button" onclick="sub()">Subtraction(-)</button>
+    <button type="button" onclick="mul()">Multiplication(*)</button>
+    <button type="button" onclick="div()">Division(/)</button>
+
+    <p id="demo3">Ket qua: </p>
+</body>
+<script>
+    function add() {
+        let input_x = document.getElementById("demo1").value;
+        let input_y = document.getElementById("demo2").value;
+        let x = parseInt(input_x);
+        let y = parseInt(input_y);
+        let a = x + y;
+        document.getElementById("demo3").innerText = "Ket qua : " + a;
+    }
+    function sub() {
+        let input_x = document.getElementById("demo1").value;
+        let input_y = document.getElementById("demo2").value;
+        let x = parseInt(input_x);
+        let y = parseInt(input_y);
+        let b = x - y;
+        document.getElementById("demo3").innerText = "Ket qua : " + b;
+    }
+    function mul() {
+        let input_x = document.getElementById("demo1").value;
+        let input_y = document.getElementById("demo2").value;
+        let x = parseInt(input_x);
+        let y = parseInt(input_y);
+        let c = x * y;
+        document.getElementById("demo3").innerText = "Ket qua : " + c;
+    }
+    function div() {
+        let input_x = document.getElementById("demo1").value;
+        let input_y = document.getElementById("demo2").value;
+        let x = parseInt(input_x);
+        let y = parseInt(input_y);
+        let d = x / y;
+        document.getElementById("demo3").innerText = "Ket qua : " + d;
+    }
+</script>
+
+</html>

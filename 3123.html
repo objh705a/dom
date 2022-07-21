@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>bt</title>
+    </head>
+    <body>
+        <h1>nhap so</h1>
+        <input type="text"  id="nhapso">
+        <button onclick="auto()">kiemtra</button>
+        
+    </body>
+    <script language="javascript">
+            
+        let num = document.getElementById("nhapso").value;
+        let x = parseInt(num);
+        let y = x % 2
+         
+        function auto() {
+            let num = document.getElementById("nhapso").value;
+        let x = parseInt(num);
+        let y = x % 2
+        if (y == 0){
+            alert(x + ' là số chẵn' );
+        }
+        else{
+            alert(x + ' là số lẻ');
+        }
+        }
+         
+    </script>
+</html>
